@@ -1,0 +1,29 @@
+<div class="card shadow" style="width: 30em; margin: 0 auto;">
+    <div class="card-body">
+        <a href="/" style="color: black;">
+            <i class="fab fa-node-js fa-6x text-center w-100"></i>
+        </a>
+        <h2 style="text-align: center;">Login</h2>
+
+        {{> alerts}}
+
+        <form action="/login" method="POST">
+
+            <div class="form-group">
+                <label for="">Email</label>
+                <input class="form-control" type="email" id="email" name="email" placeholder="Email">
+            </div>
+
+
+            <div class="form-group">
+                <label for="">Password</label>
+                <input class="form-control" type="password" id="password" name="password" placeholder="Password">
+            </div>
+
+            <button type="submit" class="w-100 bg-gray" style="border: none;">Login</button>
+
+            <p class="pt-3">Don't have an account? <a href="/register">Register</a></p>
+
+        </form>
+    </div>
+</div>

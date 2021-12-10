@@ -1,0 +1,43 @@
+<div class="card shadow" style="width: 30em; margin: 0 auto;">
+    <div class="card-body">
+        <a href="/" style="color: black;">
+            <i class="fab fa-node-js fa-6x text-center w-100"></i>
+        </a>
+        <h2 style="text-align: center;">Register</h2>
+
+        {{!-- importing partials in our views --}}
+        {{> alerts}}
+
+        <form action="/register" method="POST">
+
+            <div class="form-group">
+                <label for="">Username</label>
+                <input class="form-control" type="text" id="username" name="username" placeholder="Username">
+            </div>
+
+
+            <div class="form-group">
+                <label for="">Email</label>
+                <input class="form-control" type="email" id="email" name="email" placeholder="Email">
+            </div>
+
+
+            <div class="form-group">
+                <label for="">Password</label>
+                <input class="form-control" type="password" id="password" name="password" placeholder="Password">
+            </div>
+
+            {{!-- name allows us to get these forms inside the node file using destructuring of req.body --}}
+            <div class="form-group">
+                <label for="">Confirm Password</label>
+                <input class="form-control" type="password" id="cpass" name="cpass" placeholder="Password">
+            </div>
+
+            <button type="submit" class="w-100 bg-red" style="border: none;">Register</button>
+
+            <p>Already have an account? <a href="/login">Login</a></p>
+
+        </form>
+
+    </div>
+</div>
