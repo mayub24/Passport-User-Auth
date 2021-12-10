@@ -1,3 +1,3 @@
 # Passport-JS-Local-Auth
 
-##### Hosted at: https://passport-local-user-auth.herokuapp.com/
+##### Hosted at: https://local-passport-auth.herokuapp.com/
